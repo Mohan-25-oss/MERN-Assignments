@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+    <!-- Full Name -->
+    <div>
+        <label for="fullName">Full Name:</label>
+        <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your full name"
+        required
+        />
+    </div>
+    <br />
+    <!-- Email Address -->
+    <div>
+        <label for="email">Email Address:</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address" required
+        />
+    </div>
+    <br />
+    <!-- Phone Number -->
+    <div>
+        <label for="phone">Phone Number:</label>
+        <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        />
+    </div>
+    <br />
+    <!-- Date of Birth -->
+    <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+    </div>
+    <br />
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+    </fieldset>
+    <br />
+    <!-- Department -->
+    <div>
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="cse">CSE</option>
+        <option value="eee">EEE</option>
+        <option value="bba">BBA</option>
+        <option value="english">English</option>
+        </select>
+    </div>
+    <br />
+    <!-- Skills -->
+    <fieldset>
+        <legend>Skills:</legend>
+        <input type="checkbox" id="html" name="skills" value="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css" />
+        <label for="css">CSS</label>
+        <input
+        type="checkbox"
+        id="javascript"
+        name="skills"
+        value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="react" name="skills" value="react" />
+        <label for="react">React</label>
+    </fieldset>
+    <br />
+    <!-- Address -->
+    <div>
+        <label for="address">Address:</label> <br />
+        <textarea
+        id="address"
+        name="address"
+        rows="5"
+        cols="40"
+        placeholder="Enter your full address"
+        ></textarea>
+    </div>
+    <br />
+    <!-- Profile Picture -->
+    <div>
+        <label for="profilePicture">Upload Profile Picture:</label>
+        <input
+        type="file"
+        id="profilePicture"
+        name="profilePicture"
+        accept="image/*"
+        />
+    </div>
+    <br />
+    <!-- Password -->
+    <div>
+        <label for="password">Password:</label>
+        <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+        />
+    </div>
+    <br />
+    <!-- Confirm Password -->
+    <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your password"
+        required
+        />
+    </div>
+    <br />
+    <!-- Submit Button -->
+    <div><button type="submit">Submit</button></div>
+    </form>
+</body>
+</html>
